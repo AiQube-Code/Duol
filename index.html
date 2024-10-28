@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duol Dictionary</title>
+    <link rel="icon" href="duol.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            margin: 20px;
+            background-color: #d1d1d1; /* Grey background */
+        }
+        h1 {
+            color: black; /* Fully black */
+            text-align: center;
+            font-size: 3em; /* Bigger font size */
+            font-weight: bold; /* Bold text */
+        }
+        h2 {
+            color: #555;
+            text-align: center;
+            border: 2px solid green;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            margin-top: 30px;
+        }
+        ul {
+            line-height: 1.6;
+            padding-left: 0;
+            text-align: center;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #c8e6c9;
+            border: 2px solid green;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+        li:hover {
+            transform: scale(1.1);
+            background-color: #a5d6a7;
+        }
+    </style>
+    <script>
+        function showDefinition(word) {
+            alert("Definition of " + word + ": " + getDefinition(word));
+        }
+
+        function getDefinition(word) {
+            const definitions = {
+                "Lu": "Happy (😊)",
+                "Mo": "Sad (🙁)",
+                "Xe": "Excited (😆)",
+                "Fa": "Angry (😠)",
+                "Nu": "Calm (😌)",
+                "Zu": "Confused (🤔)",
+                "Nizu": "I am sick",
+                "Milu": "I am happy",
+                "Milo": "I am sad",
+                "Mile": "I am excited",
+                "Mifa": "I am angry",
+                "Milu Nu": "I am calm",
+                "Mizu": "I am confused",
+                "Miti": "I am tired",
+                "Mibo": "I am bored",
+                "Misu": "I am surprised",
+                "Migra": "I am grateful",
+                "Re": "Red (❤️)",
+                "Bl": "Blue (💙)",
+                "Gr": "Green (💚)",
+                "Ye": "Yellow (💛)",
+                "Bk": "Black (⬛)",
+                "Wh": "White (⬜)",
+                "Vi": "Hello (👋)",
+                "Ta": "He",
+                "Sa": "She",
+                "Ki": "It",
+                "Na": "And",
+                "Ro": "Or",
+                "Si": "Like",
+                "Li": "Dislike",
+                "Wa": "Waiting",
+                "Ka": "Yes",
+                "No": "No",
+                "Pls": "Please",
+                "Frin": "Friend",
+                "Boi": "Boy",
+                "Gri": "Girl",
+                "Ma": "Man",
+                "Wo": "Woman",
+                "Chi": "Child",
+                "Hus": "House",
+                "Kar": "Car",
+                "Bok": "Book",
+                "Fud": "Food",
+                "Wata": "Water",
+                "Un": "One",
+                "Du": "Two",
+                "Tri": "Three",
+                "For": "Four",
+                "Fi": "Five",
+                "Un Du": "Six",
+                "Un Tri": "Seven",
+                "Un For": "Eight",
+                "Du Du": "Nine",
+                "Du Tri": "Ten",
+                "Du Du Du": "Twenty",
+                "Tri Tri Tri": "Thirty",
+                "For For For": "Forty",
+                "Fi Fi Fi": "Fifty",
+                "Milu!": "I’m happy! Please!",
+                "Ka!": "Yes!",
+                "Tu Wa? No.": "Are you waiting? No.",
+                "¿": "Upside-down question mark for rhetorical questions.",
+                "*": "Asterisk for special questions.",
+                "Δ": "Delta for change.",
+                "○": "Circle for ongoing action.",
+                "∞": "Infinity symbol for emotions.",
+                "★": "Asterisk for emphasis."
+            };
+            return definitions[word] || "Definition not found.";
+        }
+    </script>
+</head>
+<body>
+    <h1>Duol Dictionary</h1>
+
+    <h2>Emotions</h2>
+    <ul>
+        <li onclick="showDefinition('Lu')" tabindex="0"><strong>Happy</strong>: Lu (😊)</li>
+        <li onclick="showDefinition('Mo')" tabindex="0"><strong>Sad</strong>: Mo (🙁)</li>
+        <li onclick="showDefinition('Xe')" tabindex="0"><strong>Excited</strong>: Xe (😆)</li>
+        <li onclick="showDefinition('Fa')" tabindex="0"><strong>Angry</strong>: Fa (😠)</li>
+        <li onclick="showDefinition('Nu')" tabindex="0"><strong>Calm</strong>: Nu (😌)</li>
+        <li onclick="showDefinition('Zu')" tabindex="0"><strong>Confused</strong>: Zu (🤔)</li>
+        <li onclick="showDefinition('Nizu')" tabindex="0">Nizu (I am sick)</li>
+        <li onclick="showDefinition('Milu')" tabindex="0">Milu (I am happy)</li>
+        <li onclick="showDefinition('Milo')" tabindex="0">Milo (I am sad)</li>
+        <li onclick="showDefinition('Mile')" tabindex="0">Mile (I am excited)</li>
+        <li onclick="showDefinition('Mifa')" tabindex="0">Mifa (I am angry)</li>
+        <li onclick="showDefinition('Milu Nu')" tabindex="0">Milu Nu (I am calm)</li>
+        <li onclick="showDefinition('Mizu')" tabindex="0">Mizu (I am confused)</li>
+        <li onclick="showDefinition('Miti')" tabindex="0">Miti (I am tired)</li>
+        <li onclick="showDefinition('Mibo')" tabindex="0">Mibo (I am bored)</li>
+        <li onclick="showDefinition('Misu')" tabindex="0">Misu (I am surprised)</li>
+        <li onclick="showDefinition('Migra')" tabindex="0">Migra (I am grateful)</li>
+    </ul>
+
+    <h2>Colors</h2>
+    <ul>
+        <li onclick="showDefinition('Re')" tabindex="0"><strong>Red</strong>: Re (❤️)</li>
+        <li onclick="showDefinition('Bl')" tabindex="0"><strong>Blue</strong>: Bl (💙)</li>
+        <li onclick="showDefinition('Gr')" tabindex="0"><strong>Green</strong>: Gr (💚)</li>
+        <li onclick="showDefinition('Ye')" tabindex="0"><strong>Yellow</strong>: Ye (💛)</li>
+        <li onclick="showDefinition('Bk')" tabindex="0"><strong>Black</strong>: Bk (⬛)</li>
+        <li onclick="showDefinition('Wh')" tabindex="0"><strong>White</strong>: Wh (⬜)</li>
+    </ul>
+
+    <h2>Greetings</h2>
+    <ul>
+        <li onclick="showDefinition('Vi')" tabindex="0"><strong>Hello</strong>: Vi (👋)</li>
+        <li onclick="showDefinition('Fa')" tabindex="0"><strong>Goodbye</strong>: Fa (👋)</li>
+    </ul>
+
+    <h2>Simple Grammar Elements</h2>
+    <ul>
+        <li onclick="showDefinition('Ta')" tabindex="0"><strong>He</strong>: Ta</li>
+        <li onclick="showDefinition('Sa')" tabindex="0"><strong>She</strong>: Sa</li>
+        <li onclick="showDefinition('Ki')" tabindex="0"><strong>It</strong>: Ki</li>
+        <li onclick="showDefinition('Na')" tabindex="0"><strong>And</strong>: Na</li>
+        <li onclick="showDefinition('Ro')" tabindex="0"><strong>Or</strong>: Ro</li>
+        <li onclick="showDefinition('Si')" tabindex="0"><strong>Like</strong>: Si</li>
+        <li onclick="showDefinition('Li')" tabindex="0"><strong>Dislike</strong>: Li</li>
+        <li onclick="showDefinition('Wa')" tabindex="0"><strong>Waiting</strong>: Wa</li>
+        <li onclick="showDefinition('Ka')" tabindex="0"><strong>Yes</strong>: Ka</li>
+        <li onclick="showDefinition('No')" tabindex="0"><strong>No</strong>: No</li>
+        <li onclick="showDefinition('Pls')" tabindex="0"><strong>Please</strong>: Pls</li>
+    </ul>
+
+    <h2>Everyday Objects</h2>
+    <ul>
+        <li onclick="showDefinition('Frin')" tabindex="0">Frin (Friend)</li>
+        <li onclick="showDefinition('Boi')" tabindex="0">Boi (Boy)</li>
+        <li onclick="showDefinition('Gri')" tabindex="0">Gri (Girl)</li>
+        <li onclick="showDefinition('Ma')" tabindex="0">Ma (Man)</li>
+        <li onclick="showDefinition('Wo')" tabindex="0">Wo (Woman)</li>
+        <li onclick="showDefinition('Chi')" tabindex="0">Chi (Child)</li>
+        <li onclick="showDefinition('Hus')" tabindex="0">Hus (House)</li>
+        <li onclick="showDefinition('Kar')" tabindex="0">Kar (Car)</li>
+        <li onclick="showDefinition('Bok')" tabindex="0">Bok (Book)</li>
+        <li onclick="showDefinition('Fud')" tabindex="0">Fud (Food)</li>
+        <li onclick="showDefinition('Wata')" tabindex="0">Wata (Water)</li>
+    </ul>
+
+    <h2>Numbers</h2>
+    <ul>
+        <li onclick="showDefinition('Un')" tabindex="0">Un (One)</li>
+        <li onclick="showDefinition('Du')" tabindex="0">Du (Two)</li>
+        <li onclick="showDefinition('Tri')" tabindex="0">Tri (Three)</li>
+        <li onclick="showDefinition('For')" tabindex="0">For (Four)</li>
+        <li onclick="showDefinition('Fi')" tabindex="0">Fi (Five)</li>
+        <li onclick="showDefinition('Un Du')" tabindex="0">Un Du (Six)</li>
+        <li onclick="showDefinition('Un Tri')" tabindex="0">Un Tri (Seven)</li>
+        <li onclick="showDefinition('Un For')" tabindex="0">Un For (Eight)</li>
+        <li onclick="showDefinition('Du Du')" tabindex="0">Du Du (Nine)</li>
+        <li onclick="showDefinition('Du Tri')" tabindex="0">Du Tri (Ten)</li>
+        <li onclick="showDefinition('Du Du Du')" tabindex="0">Du Du Du (Twenty)</li>
+        <li onclick="showDefinition('Tri Tri Tri')" tabindex="0">Tri Tri Tri (Thirty)</li>
+        <li onclick="showDefinition('For For For')" tabindex="0">For For For (Forty)</li>
+        <li onclick="showDefinition('Fi Fi Fi')" tabindex="0">Fi Fi Fi (Fifty)</li>
+    </ul>
+
+    <h2>Special Expressions</h2>
+    <ul>
+        <li onclick="showDefinition('Milu!')" tabindex="0">Milu! (I’m happy! Please!)</li>
+        <li onclick="showDefinition('Ka!')" tabindex="0">Ka! (Yes!)</li>
+        <li onclick="showDefinition('Tu Wa? No.')" tabindex="0">Tu Wa? No. (Are you waiting? No.)</li>
+    </ul>
+
+    <h2>Punctuation</h2>
+    <ul>
+        <li onclick="showDefinition('¿')" tabindex="0">¿ (Upside-down question mark for rhetorical questions)</li>
+        <li onclick="showDefinition('*')" tabindex="0">*</li>
+        <li onclick="showDefinition('Δ')" tabindex="0">Δ (Delta for change)</li>
+        <li onclick="showDefinition('○')" tabindex="0">○ (Circle for ongoing action)</li>
+        <li onclick="showDefinition('∞')" tabindex="0">∞ (Infinity symbol for emotions)</li>
+        <li onclick="showDefinition('★')" tabindex="0">★ (Asterisk for emphasis)</li>
+    </ul>
+</body>
+</html>
